@@ -5,7 +5,7 @@ export const useInitialWord = () => {
 
     useEffect(() => {
         setInitial('initial word');
-    });
+    }, [setInitial]);
 
     return initial;
 }
