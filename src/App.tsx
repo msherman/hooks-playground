@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {SearchWithState} from "./instanceVariableNotUpdating/components/SearchWithState";
+import {SearchWithoutRef} from "./instanceVariableNotUpdating/components/SearchWithoutRef";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <SearchWithoutRef/>
+            <SearchWithState/>
+        </div>
+    );
 }
 
 export default App;
