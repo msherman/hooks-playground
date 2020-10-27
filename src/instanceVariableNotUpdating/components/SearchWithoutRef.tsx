@@ -15,6 +15,7 @@ export const SearchWithoutRef: React.FC = () => {
 
     useEffect(() => {
         console.log("3. SearchWithoutRef - useEffect - start")
+        // This is purposefully throwing a warning to use as an example
         nonStateWord = `${nonStateWord} = ${limit}`;
         console.log("4. SearchWithoutRef - useEffect - end")
     });
